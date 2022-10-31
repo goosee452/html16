@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+body{
+    background-color: black;
+}
+
+.window{
+    display: flex;
+    height: 300px;
+    width: 600px;
+    background-image: url(lol.png);
+    background-size: cover;
+    background-position: center;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 10px 10px 10px white;
+    margin: 0 auto;
+}
+
+.curtain{
+    height: 300px;
+    width: 600px;
+    background-color: rgb(168, 97, 56);
+
+}
+
+.curtain:hover{
+transform: translateY(-200%);
+transition: linear 1s;
+}
+
+.text{
+    color: red;
+    position: absolute;
+}
+</style>
+
+<body>
+    
+    <div class="window">
+
+        <div class="text">
+            <div class="up">-100</div>
+            <div class="down">social credit</div>
+        </div>
+
+        <div class="curtain">
+
+
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>

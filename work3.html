@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.main{
+    margin: 0 auto;
+    width: 550px;
+    height: 700px;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation-duration: 0.5s;
+    animation-name: back1;
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes back1{
+    0%{
+        background-color: red;
+    }
+
+    20%{
+        background-color: yellow;
+    }
+
+    40%{
+        background-color: green;
+    }
+
+    60%{
+        background-color: blue;
+    }
+
+    80%{
+        background-color: purple;
+    }
+
+    100%{
+        background-color: red;
+    }
+}
+
+img{
+    height: 200px;
+    width: 200px;
+
+    animation-duration: 0.5s;
+    animation-name: frog;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes frog{
+    0%{
+        height: 100px;
+        width: 400px;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        width: 100px;
+        height: 400px;
+        transform: rotate(180deg);
+    }
+
+    100%{
+        height: 100px;
+        width: 400px;
+        transform: rotate(360deg);
+    }
+}
+
+</style>
+
+<body>
+
+    <div class="main">
+        <img src="frog.webp" alt="">
+    </div>
+
+
+
+</body>
+</html>

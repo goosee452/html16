@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.animation{
+    width: 50vw;
+    margin: 0 auto 1vmin;
+    height: calc(30vh + 5vw);
+    border: 10px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-image: linear-gradient(white, black);
+}
+
+.animation>div{
+    background-color: red;
+    border-radius: 50%;
+    width: 5vmin;
+    height: 5vmin;
+    position: relative;
+    color: purple;
+
+
+
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-name: animation1;
+
+}
+
+/* .test1{
+    animation-iteration-count: 1;
+}
+
+.test2{
+    animation-iteration-count: 2;
+}
+
+.test3{
+    animation-iteration-count: 3;
+} */
+
+/* .test4{
+    animation-iteration-count: infinite;
+} */
+
+@keyframes animation1{
+    0%{
+        top: 0px;
+    }
+
+    50%{
+        top: calc(100% - 5vw);
+    }
+
+    100%{
+        top: 0px;
+    }
+}
+
+p{
+    animation-duration: 5s;
+    animation-name: animation2;
+
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation2{
+
+    0%{
+        left: -100%;
+        color: yellow;
+    }
+
+    50%{
+        left: 50%;
+        color: purple;
+    }
+
+    100%{
+        left: 0px;
+        color: royalblue;
+    }
+}
+
+</style>
+
+
+<body>
+    
+
+    <div class="animation">
+        <div class="test1">1</div>
+        <div class="test2">2</div>
+        <div class="test3">3</div>
+        <div class="test4">iuvhddsvbusd</div>
+        <p style="color: white;">loreiudrgvbuieduireuiggugbrelgbluiguierhgiulgherhgurh</p>
+    </div>
+
+
+
+
+</body>
+</html>

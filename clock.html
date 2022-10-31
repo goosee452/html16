@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.clock{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(136, 24, 24);
+    border-radius: 50%;
+
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    position: relative;
+    box-shadow: 5px 5px 5px black;
+}
+
+.clock>div{
+    background-color: rgb(155, 235, 202);
+    position: absolute;
+    transform-origin: center bottom;
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.hour{
+    height: 30%;
+    width: 10px;
+    left: calc(50% - 2px);
+    bottom: 50%;
+
+    animation-duration: calc(43200s);
+    animation-name: hour;
+}
+
+.min{
+    height: 40%;
+    width: 7px;
+    left: calc(50% - 1px);
+    bottom: 50%;
+
+    animation-duration: 3600s;
+    animation-name: min;
+}
+
+.sec{
+    height: 45%;
+    width: 4px;
+    left: 50%;
+    bottom: 50%;
+
+    animation-duration: 60s;
+    animation-name: sec;
+    
+}
+
+@keyframes sec{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes min{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hour{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+</style>
+
+
+<body>
+
+    <div class="clock">
+        <div class="hour"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
+
+    </div>
+</body>
+</html>
